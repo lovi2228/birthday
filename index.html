@@ -5,11 +5,12 @@
 <!--[if gt IE 8]> <html> <![endif]-->
 <!--[if !IE]><!--><html lang="en"><!-- <![endif]-->
 <head>
-	<title>Happy Birthday</title>
+	<title>Happy Birthday fiza</title>
 	<meta charset="UTF-8" />
-	<meta name="description" content="Happy Birthday Xola">
+	<meta name="description" content="Happy Birthday Fiza">
 	<meta name="robots" content="index, follow" />
-	<link rel="author" href="https://plus.google.com/u/1/+AyushSharma1/" /> 
+	<link rel="author" href="https://github.com/suhan5" />
+<meta name="author" content="Made with ❤️ by Suhan for you mere bhai Fiza" />
     <meta name="keywords" content="Birthday, Happy">
     <!-- Strat of Facebook Meta -->
     <meta property="og:type" content="E-Greeting" />
@@ -45,17 +46,37 @@
     	<h2 style="color:#D14D39;">D</h2>
     </div>
 	<div class="balloons text-center" id="b4">
-    	<h2 style="color:#8FAD00;">X</h2>
+    	<h2 style="color:#8FAD00;">F</h2>
     </div>
 	<div class="balloons text-center" id="b5">
-    	<h2 style="color:#8377E4;">O</h2>
+    	<h2 style="color:#8377E4;">I</h2>
     </div>
     <div class="balloons text-center" id="b6">
-    	<h2 style="color:#99C96A;">L</h2>
+    	<h2 style="color:#99C96A;">Z</h2>
     </div>
     <div class="balloons text-center" id="b7">
     	<h2 style="color:#20CFB4;">A</h2>
     </div>
+	<!-- Custom Birthday Message for Fiza -->
+<div class="text-center" style="margin-top: 50px;">
+  <h2 id="wish" style="color:#ff4081; font-family: 'Pacifico', cursive; font-size: 32px;"></h2>
+</div>
+
+<script>
+  const msg = "Happy Birthday Fiza 💖 From Suhan";
+  let i = 0;
+  const speed = 120;
+
+  function typeEffect() {
+    if (i < msg.length) {
+      document.getElementById("wish").innerHTML += msg.charAt(i);
+      i++;
+      setTimeout(typeEffect, speed);
+    }
+  }
+
+  window.onload = typeEffect;
+</script>
 
     <img src="Balloon-Border.png" width="100%" class="balloon-border">
  
@@ -181,7 +202,36 @@
 
 
 	</div>
-</body>
+	<!-- Existing scripts already present above this line -->
+
+  <!-- 🎉 Confetti Animation Starts Here -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script>
+    setTimeout(() => {
+      var duration = 3 * 1000;
+      var end = Date.now() + duration;
+
+      (function frame() {
+        confetti({
+          particleCount: 5,
+          angle: 60,
+          spread: 55,
+          origin: { x: 0 }
+        });
+        confetti({
+          particleCount: 5,
+          angle: 120,
+          spread: 55,
+          origin: { x: 1 }
+        });
+        if (Date.now() < end) {
+          requestAnimationFrame(frame);
+        }
+      })();
+    }, 1000);
+  </script>
+  <!-- 🎉 Confetti Animation Ends Here -->
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 <script src="effect.js"></script>
